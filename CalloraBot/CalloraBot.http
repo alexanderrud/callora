@@ -2,5 +2,3 @@
 
 GET {{CalloraBot_HostAddress}}/
 Accept: application/json
-
-###

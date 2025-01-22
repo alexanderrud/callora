@@ -1,19 +1,25 @@
-var builder = WebApplication.CreateBuilder(args);
+using CalloraBot.Extensions;
 
+WebApplicationBuilder builder = WebApplication.CreateBuilder(args);
 
-builder.Services.AddControllers();
-builder.Services.AddOpenApi();
+IServiceCollection services = builder.Services;
 
-var app = builder.Build();
+services
+    .AddServices()
+    .AddControllers();
+
+services.AddOpenApi();
+
+WebApplication app = builder.Build();
 
 if (app.Environment.IsDevelopment())
 {
     app.MapOpenApi();
 }
 
-app.UseHttpsRedirection();
-
-app.UseAuthorization();
+app
+    .UseHttpsRedirection()
+    .UseAuthorization();
 
 app.MapControllers();
 
