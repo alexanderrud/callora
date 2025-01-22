@@ -7,6 +7,8 @@ obj/
 *.sln.docstates
 
 *.vs/*
+CalloraBot/.vs/*
+
 .vscode/
 appsettings*.json
 !appsettings.json
