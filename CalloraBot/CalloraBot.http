@@ -1,0 +1,6 @@
+@CalloraBot_HostAddress = http://localhost:5114
+
+GET {{CalloraBot_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
