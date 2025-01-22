@@ -2,6 +2,7 @@
 {
     public enum BotMethod
     {
-        GetMe = 0,
+        GetMe = 1,
+        GetUpdates = 2
     }
 }

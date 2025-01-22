@@ -6,7 +6,11 @@ IServiceCollection services = builder.Services;
 
 services
     .AddServices()
-    .AddControllers();
+    .AddControllers()
+    .AddJsonOptions(options =>
+    {
+        options.JsonSerializerOptions.PropertyNamingPolicy = null;
+    });
 
 services.AddOpenApi();
 

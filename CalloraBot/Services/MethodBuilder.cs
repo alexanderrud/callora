@@ -15,7 +15,8 @@ namespace CalloraBot.Services
 
             _methodsList = new Dictionary<BotMethod, string>()
             {
-                [BotMethod.GetMe] = "getMe"
+                [BotMethod.GetMe] = "getMe",
+                [BotMethod.GetUpdates] = "getUpdates"
             };
         }
 
